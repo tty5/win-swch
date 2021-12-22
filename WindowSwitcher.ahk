@@ -1,13 +1,12 @@
 ﻿#SingleInstance force
 #NoEnv
-#NoTrayIcon
 SetBatchLines -1
 DetectHiddenWindows Off
 
 ; === CONFIGURATION ===
-Key := "^!I"
-Width := 500
-MaxItems := 15
+Key := "!w"
+Width := 800
+MaxItems := 20
 LargeIcons := true
 CenterText := false
 MoveUp := 120
@@ -72,7 +71,7 @@ Class Switcher extends Gui {
 	}
 	
 	ListViewAction(x*) {
-		if (x.2 = "DoubleClick")
+		if (x.2 = "Normal")
 			this.Go()
 	}
 	
