@@ -154,7 +154,7 @@ Class Switcher extends Gui {
 		this.LV.Redraw(false)
 		Count := this.LV.GetCount()
 		this.LV.ModifyCol(1, Width - ((Count > MaxItems) ? VERT_SCROLL : 0))
-		this.Pos(A_ScreenWidth/2 - Width/2, A_ScreenHeight/2 - MoveUp,, 26 + (MaxItems > Count ? Count : MaxItems) * ROW_HEIGHT)
+		this.Pos(A_ScreenWidth/5, A_ScreenHeight/4 - MoveUp,, 26 + (MaxItems > Count ? Count : MaxItems) * ROW_HEIGHT)
 		this.Control("Move", this.LV.hwnd, "h" (ROW_HEIGHT * (MaxItems > Count ? Count : MaxItems)))
 		this.LV.Modify((Pos>Count?Count:Pos), "Select Vis")
 		this.LV.ModifyCol(2, 0)
