@@ -4,7 +4,7 @@ SetBatchLines -1
 DetectHiddenWindows Off
 
 ; === CONFIGURATION ===
-Key := "!s"
+Key := "!w"
 Width := 800
 MaxItems := 20
 LargeIcons := true
