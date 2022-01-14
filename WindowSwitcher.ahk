@@ -3,6 +3,9 @@
 SetBatchLines -1
 DetectHiddenWindows Off
 
+;press Win+Z to lock computer
+#z::DllCall("LockWorkStation")
+
 ; === CONFIGURATION ===
 Key := "!w"
 Width := 800
