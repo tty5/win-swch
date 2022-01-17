@@ -3,8 +3,6 @@
 SetBatchLines -1
 DetectHiddenWindows Off
 
-;press Win+Z to lock computer
-#z::DllCall("LockWorkStation")
 
 ; === CONFIGURATION ===
 Key := "!w"
@@ -237,3 +235,7 @@ LV_EX_GetItemRect(HLV, Row := 1, LVIR := 0, Byref RECT := "") {
 #Include lib\Class GUI.ahk
 #Include lib\Class Hotkey.ahk
 #Include lib\Fuzzy.ahk
+
+;press Win+Z to lock computer
+#z::DllCall("LockWorkStation")
+
