@@ -5,7 +5,7 @@ DetectHiddenWindows Off
 
 
 ; === CONFIGURATION ===
-Key := "!w"
+Key := "!'"
 Width := 800
 MaxItems := 20
 LargeIcons := true
@@ -237,5 +237,8 @@ LV_EX_GetItemRect(HLV, Row := 1, LVIR := 0, Byref RECT := "") {
 #Include lib\Fuzzy.ahk
 
 ;press Win+Z to lock computer
-#z::DllCall("LockWorkStation")
-
+#z::
+{
+	DllCall("LockWorkStation")
+	FileSetTime, , C:\winmute\a.txt
+}
